@@ -1,6 +1,9 @@
 # dbrlib
 The library for discord bot reviews
 
+# Download 
+    download the 'dbr_lib.zip' 
+    
 # Documentation
 
 ```javascript
