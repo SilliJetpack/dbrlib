@@ -10,17 +10,17 @@ The library for discord bot reviews
 const dbr = require("dbr")
 const dbrbot = new dbr.dbrbot()
 
-dbrbot.getbot("A bot's ID").then(r=> console.log(r))
+dbrbot.getbot("A bot's ID").then(r=> console.log(r)) // Get a bot's info
 
-dbrbot.getuser("A user's ID").then(r=> console.log(r))
+dbrbot.getuser("A user's ID").then(r=> console.log(r)) // Get user info
 
-dbrbot.getwidget("Bot ID", "Directory where to save the image")
+dbrbot.getwidget("Bot ID", "Directory where to save the image") // Get a bot's widget
 
-dbrbot.post("Bot ID", "Token", "Server Count")
+dbrbot.post("Bot ID", "Token", "Server Count") // Post server count to the API
 ```
 
 
-#  botget() options
+#  getbot() options
         clientID - the bot's ID
         prefix - the bot's prefix
         invite_url - the bot's invite url (custom or default)
@@ -35,7 +35,7 @@ dbrbot.post("Bot ID", "Token", "Server Count")
         unique - returns true if bot is certified as "unique"
         veryUnique - returns true if bot is certified as "veryUnique"
         
-# userget() options
+# getuser() options
           id - the user's ID
         biography - the user's biography
         iscertified - returns true if user is certified
