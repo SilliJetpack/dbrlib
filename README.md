@@ -15,6 +15,8 @@ dbrbot.getbot("A bot's ID").then(r=> console.log(r))
 dbrbot.getuser("A user's ID").then(r=> console.log(r))
 
 dbrbot.getwidget("Bot ID", "Directory where to save the image")
+
+dbrbot.post("Bot ID", "Token", "Server Count")
 ```
 
 
