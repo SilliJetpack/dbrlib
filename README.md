@@ -8,7 +8,7 @@ The library for discord bot reviews
 
 ```javascript
 const dbr = require("dbr")
-const dbrbot = new dbr.dbrbot()
+const dbrbot = new dbr.dbrbot("Your API token")
 
 dbrbot.getbot("A bot's ID").then(r=> console.log(r)) // Get a bot's info
 
@@ -16,7 +16,9 @@ dbrbot.getuser("A user's ID").then(r=> console.log(r)) // Get user info
 
 dbrbot.getwidget("Bot ID", "Directory where to save the image", "Type (alt or default)", "style (object)") // Get a bot's widget
 
-dbrbot.post("Bot ID", "Token", "Server Count") // Post server count to the API
+dbrbot.post("Bot ID", "Server Count") // Post server count to the API
+
+dbrbot.getRatingData("Bot ID") // Returns information about your bot's rating data
 ```
 
 
@@ -52,3 +54,6 @@ dbrbot.post("Bot ID", "Token", "Server Count") // Post server count to the API
  # getwidget() options
    type - the widget type (default for normal one, alt for the alternate one, see API page to see what it is)
    style - the object for customization for the widget (see API page for customization)
+   
+   
+   > If you have a vanity URL, use that instead of the ID of the bot on bot endpoints.
